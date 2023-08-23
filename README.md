@@ -38,13 +38,13 @@ In this project, you take a fairly complex application used to search a movie da
 
 * [*] **The Movie component needs to access our list of movies to function.** Map movies to props here as well.
 
-* [ ] **Finally, MovieHeader uses appTitle to display the title text.** Connect this component to appTitle and test appTitle is correctly displayed in your app.
+* [*] **Finally, MovieHeader uses appTitle to display the title text.** Connect this component to appTitle and test appTitle is correctly displayed in your app.
 
 
 #### Connecting the Delete and Add Movie actions
 > *Looks like you got a good handle on mapping stateToProps! Now let's connect some actions.*
 
-* [ ] Note that the deleteMovie reducer case and action creator are already available.
+* [*] Note that the deleteMovie reducer case and action creator are already available.
 
 * [ ] **We can delete movies within the Movie Component.** Connect the deleteMovie action through the connect method.
 

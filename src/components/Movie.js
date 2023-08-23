@@ -54,4 +54,4 @@ const mapStateToProps = (state) => {
     })
 }
 
-export default connect(mapStateToProps)(Movie);
+export default connect(mapStateToProps)(Movie); // connect from react redux to hook up state from the store where our state
