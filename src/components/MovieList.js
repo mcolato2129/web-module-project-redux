@@ -1,10 +1,10 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
 import MovieListItem from './MovieListItem';
 import MovieFooter from './MovieFooter';
 
 const MovieList = (props)=> {
-    const movies = [];
+    const { movies } = props;
 
     return (
         <div className="col">
@@ -31,4 +31,10 @@ const MovieList = (props)=> {
     );
 }
 
-export default MovieList;
+const mapStateToProps = (state) => {
+    return({
+        movies: state.movies
+    })
+}
+
+export default connect(mapStateToProps)(MovieList); // Need to use the connect from react redux to hook up the 'state' to 'props' and use in Class components 
